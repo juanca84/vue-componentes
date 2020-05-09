@@ -1,16 +1,21 @@
 <template>
-    <div>
-        <!-- <img class="image-center" src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos"> -->
+    <div class="container">
+        <app-header/>
         <ejemplo-post/>
+        <app-footer/>
     </div>
 </template>
 
 <script>
+import AppHeader from './components/Header'
 import EjemploPost from './components/Posts'
+import AppFooter from './components/Footer'
 export default {
   name: 'App',
   components: {
-    EjemploPost
+    AppHeader,
+    EjemploPost,
+    AppFooter
   }
 }
 </script>
