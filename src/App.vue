@@ -1,5 +1,24 @@
 <template>
     <div id="app">
-        <img src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos">
+        <img class="image-center" src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos">
+        <EjemploPost></EjemploPost>
     </div>
 </template>
+
+<script>
+import EjemploPost from './components/Posts'
+export default {
+  name: 'App',
+  components: {
+    EjemploPost
+  }
+}
+</script>
+
+<style>
+  .image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
