@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <!-- <img class="image-center" src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos"> -->
         <ejemplo-post/>
     </div>
