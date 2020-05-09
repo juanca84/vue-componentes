@@ -11,15 +11,15 @@ var componente2 = Vue.extend({
   }
 })
 var componente3 = Vue.extend({
-  template: '<ul><li v-for="ele in lista">{{ele.item}}</li></ul>',
+  template: '<div><ul><framework v-for="ele in lista" :key="ele.id">{{ele.item}}</framework></ul></div>',
   // Se debe crear un método que devuelva los datos
   data () {
     return {
       lista: [
-        { item: 'Vue.js' },
-        { item: 'Angular' },
-        { item: 'React' },
-        { item: 'Backbone' }
+        { id: 1, item: 'Vue.js' },
+        { id: 2, item: 'Angular' },
+        { id: 3, item: 'React' },
+        { id: 4, item: 'Backbone' }
       ]
     }
   }
@@ -38,6 +38,9 @@ Vue.component('componente-saludo', {
 })
 Vue.component('componente-titulo', componente2)
 Vue.component('componente-lista', componente3)
+Vue.component('framework', {
+  template: '<li><slot></slot></li>'
+})
 
 /* eslint-disable no-new */
 new Vue({
