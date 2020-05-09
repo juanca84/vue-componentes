@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <img class="image-center" src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos">
+        <!-- <img class="image-center" src="http://spartadev.com/resources/images/dancercats.gif" alt="gatitos"> -->
         <ejemplo-post/>
     </div>
 </template>
@@ -16,9 +16,5 @@ export default {
 </script>
 
 <style>
-  .image-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 </style>
